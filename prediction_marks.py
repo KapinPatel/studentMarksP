@@ -40,9 +40,9 @@ def predict():
             else:
                 return render_template('Marks.html',predict = f'If You study {data} hours then You can get 100% Marks')
         else:
-            return render_template('Marks.html',predict = 'Please Enter hours between 1-24')
+                return render_template('Marks.html',predict = 'Please Enter hours between 1-24')
 
 
 
-app.run(debug=True)
-
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000, debug=False)
